@@ -1,4 +1,5 @@
 import { Menu } from 'lucide-react';
+import Image from 'next/image';
 
 export function Header() {
   return (
@@ -7,8 +8,13 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-r from-[#7C4DFF] to-[#00BCD4] rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">K</span>
+            <div className="w-8 h-8 relative">
+              <Image
+                src="/image.png"
+                alt="Kampus Logo"
+                fill
+                className="object-contain"
+              />
             </div>
             <span className="font-bold text-xl">Kampus</span>
           </div>

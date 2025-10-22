@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Kampus",
     images: [
       {
-        url: "/og-image.png",
+        url: "/image.png",
         width: 1200,
         height: 630,
         alt: "Kampus - Modern Learning Platform",
@@ -44,12 +44,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kampus - Modern Learning Platform",
     description: "Transform your learning experience with Kampus - the modern platform for students and educators.",
-    images: ["/og-image.png"],
+    images: ["/image.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/image.png",
+    shortcut: "/image.png",
+    apple: "/image.png",
   },
   manifest: "/site.webmanifest",
 };

@@ -1,4 +1,5 @@
 import { Heart } from 'lucide-react';
+import Image from 'next/image';
 
 export function Footer() {
   return (
@@ -8,8 +9,13 @@ export function Footer() {
           {/* Logo & Mission */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-[#7C4DFF] to-[#00BCD4] rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-lg">K</span>
+              <div className="w-10 h-10 relative">
+                <Image
+                  src="/image.png"
+                  alt="Kampus Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <span className="font-bold text-2xl">Kampus</span>
             </div>
