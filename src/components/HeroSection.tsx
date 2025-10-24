@@ -31,40 +31,40 @@ export function HeroSection() {
           <div className="bg-white/60 backdrop-blur-xl border border-white/40 rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
             <div className="grid grid-cols-4 gap-6">
               {/* Shop */}
-              <div className="flex flex-col items-center gap-3 group cursor-pointer animate-fade-in-up animation-delay-600">
+              <a href="http://gatorex.shop/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-3 group cursor-pointer animate-fade-in-up animation-delay-600">
                 <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg transition-all duration-300 group-hover:shadow-blue-500/50 group-hover:-translate-y-2 group-hover:scale-110">
                   <ShoppingBag className="w-8 h-8 text-white group-hover:rotate-12 transition-transform duration-300" />
                 </div>
                 <span className="text-sm font-medium text-gray-700 group-hover:text-blue-600 transition-colors duration-300">Shop</span>
                 <span className="text-xs text-gray-500 group-hover:text-blue-500 transition-colors duration-300">Textbooks</span>
-              </div>
+              </a>
 
               {/* Uber */}
-              <div className="flex flex-col items-center gap-3 group cursor-pointer animate-fade-in-up animation-delay-700">
+              <a href="http://rydify.co/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-3 group cursor-pointer animate-fade-in-up animation-delay-700">
                 <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg transition-all duration-300 group-hover:shadow-pink-500/50 group-hover:-translate-y-2 group-hover:scale-110">
                   <Car className="w-8 h-8 text-white group-hover:rotate-12 transition-transform duration-300" />
                 </div>
                 <span className="text-sm font-medium text-gray-700 group-hover:text-pink-600 transition-colors duration-300">Uber</span>
                 <span className="text-xs text-gray-500 group-hover:text-pink-500 transition-colors duration-300">Rideshare</span>
-              </div>
+              </a>
 
               {/* Live */}
-              <div className="flex flex-col items-center gap-3 group cursor-pointer animate-fade-in-up animation-delay-800">
+              <a href="https://www.vybr.club/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-3 group cursor-pointer animate-fade-in-up animation-delay-800">
                 <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center shadow-lg transition-all duration-300 group-hover:shadow-green-500/50 group-hover:-translate-y-2 group-hover:scale-110">
                   <Home className="w-8 h-8 text-white group-hover:rotate-12 transition-transform duration-300" />
                 </div>
                 <span className="text-sm font-medium text-gray-700 group-hover:text-green-600 transition-colors duration-300">Live</span>
                 <span className="text-xs text-gray-500 group-hover:text-green-500 transition-colors duration-300">Housing</span>
-              </div>
+              </a>
 
               {/* Party */}
-              <div className="flex flex-col items-center gap-3 group cursor-pointer animate-fade-in-up animation-delay-900">
+              <a href="https://tribzy.com/" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center gap-3 group cursor-pointer animate-fade-in-up animation-delay-900">
                 <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-violet-600 rounded-2xl flex items-center justify-center shadow-lg transition-all duration-300 group-hover:shadow-purple-500/50 group-hover:-translate-y-2 group-hover:scale-110">
                   <PartyPopper className="w-8 h-8 text-white group-hover:rotate-12 transition-transform duration-300" />
                 </div>
                 <span className="text-sm font-medium text-gray-700 group-hover:text-purple-600 transition-colors duration-300">Party</span>
                 <span className="text-xs text-gray-500 group-hover:text-purple-500 transition-colors duration-300">Events</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>

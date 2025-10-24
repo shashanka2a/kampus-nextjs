@@ -7,6 +7,7 @@ const features = [
     icon: ShoppingBag,
     color: 'from-blue-500 to-blue-600',
     glowColor: 'group-hover:shadow-blue-500/20',
+    url: 'http://gatorex.shop/',
     benefits: [
       'Instant listings',
       'Send payment',
@@ -19,6 +20,7 @@ const features = [
     icon: Car,
     color: 'from-red-500 to-pink-600',
     glowColor: 'group-hover:shadow-pink-500/20',
+    url: 'http://rydify.co/',
     benefits: [
       'Cost splitting',
       'Route optimization',
@@ -31,6 +33,7 @@ const features = [
     icon: Home,
     color: 'from-green-500 to-emerald-600',
     glowColor: 'group-hover:shadow-green-500/20',
+    url: 'https://www.vybr.club/',
     benefits: [
       'Verified listings',
       'Virtual tours',
@@ -43,6 +46,7 @@ const features = [
     icon: PartyPopper,
     color: 'from-purple-500 to-violet-600',
     glowColor: 'group-hover:shadow-purple-500/20',
+    url: 'https://tribzy.com/',
     benefits: [
       'Event discovery',
       'RSVP tracking',
@@ -68,9 +72,12 @@ export function FeaturesSection() {
         {/* Feature Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
-            <div
+            <a
               key={feature.name}
-              className={`group bg-white rounded-2xl p-6 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ${feature.glowColor} cursor-pointer border border-gray-100 animate-fade-in-up`}
+              href={feature.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group bg-white rounded-2xl p-6 shadow-md transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl ${feature.glowColor} cursor-pointer border border-gray-100 animate-fade-in-up block`}
               style={{ animationDelay: `${600 + index * 200}ms` }}
             >
               {/* Icon */}
@@ -96,10 +103,10 @@ export function FeaturesSection() {
 
               {/* Learn More Link */}
               <div className="flex items-center gap-1 text-sm font-medium text-gray-900 group-hover:gap-3 transition-all duration-300 group-hover:text-blue-600">
-                Learn more
+                Visit {feature.name}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </div>
-            </div>
+            </a>
           ))}
         </div>
 
