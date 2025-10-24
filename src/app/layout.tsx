@@ -50,6 +50,10 @@ export const metadata: Metadata = {
     icon: "/image.png",
     shortcut: "/image.png",
     apple: "/image.png",
+    other: {
+      rel: "icon",
+      url: "/image.png",
+    },
   },
   manifest: "/site.webmanifest",
 };
