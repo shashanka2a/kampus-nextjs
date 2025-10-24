@@ -8,7 +8,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kampus - Modern Learning Platform",
+  title: "Kampus | The Ultimate Student Super-App",
   description: "Transform your learning experience with Kampus - the modern platform for students and educators.",
   keywords: ["education", "learning", "students", "online learning", "campus", "university", "college", "textbooks", "furniture", "rides", "housing", "events"],
   authors: [{ name: "Kampus Team" }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Kampus - Modern Learning Platform",
+    title: "Kampus | The Ultimate Student Super-App",
     description: "Transform your learning experience with Kampus - the modern platform for students and educators.",
     type: "website",
     locale: "en_US",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kampus - Modern Learning Platform",
+    title: "Kampus | The Ultimate Student Super-App",
     description: "Transform your learning experience with Kampus - the modern platform for students and educators.",
     images: ["/image.png"],
   },
