@@ -1,9 +1,37 @@
-import { ArrowRight, Users, Star, CheckCircle } from 'lucide-react';
+'use client';
+
+import { ArrowRight, Users, Star, CheckCircle, ChevronDown } from 'lucide-react';
 import { Button } from './ui/button';
+import { useState } from 'react';
 
 export function CTASection() {
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+
+  const faqs = [
+    {
+      question: "Is Kampus free to use?",
+      answer: "Yes! Kampus is completely free for all students. No setup fees, no hidden charges, and no credit card required to get started."
+    },
+    {
+      question: "How do I verify my .edu email?",
+      answer: "Simply sign up with your university email address ending in .edu. We'll send you a verification link to confirm your student status and unlock all features."
+    },
+    {
+      question: "Is my data safe and secure?",
+      answer: "Absolutely! We use enterprise-grade security to protect your information. All transactions are encrypted and we never share your personal data with third parties."
+    },
+    {
+      question: "Can I use Kampus on my phone?",
+      answer: "Yes! Kampus is fully responsive and works perfectly on all devices - desktop, tablet, and mobile. Access all features on the go."
+    },
+    {
+      question: "What if I have issues with a transaction?",
+      answer: "Our support team is here to help! Contact us through the app or email, and we'll resolve any issues within 24 hours. We also have a dispute resolution system for complex cases."
+    }
+  ];
+
   return (
-    <section className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
+    <section id="faq" className="relative py-24 px-4 sm:px-6 lg:px-8 overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-green-600 via-blue-600 to-purple-700" />
       
@@ -15,13 +43,13 @@ export function CTASection() {
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         {/* Headline */}
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-          Ready to Simplify Your Campus Life?
+          Ready to transform your campus experience?
           <span className="inline-block ml-2">✨</span>
         </h2>
 
         {/* Subline */}
         <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
-          Get started with our student-focused platform today
+          Free .edu verified and all - Get started with our student-focused platform today
         </p>
 
         {/* Pill Buttons */}
@@ -53,10 +81,37 @@ export function CTASection() {
         </div>
 
         {/* Footer Note */}
-        <p className="text-white/70 text-sm">
+        <p className="text-white/70 text-sm mb-16">
           <CheckCircle className="w-4 h-4 inline mr-1" />
           Free to start • No credit card required
         </p>
+
+        {/* FAQ Section */}
+        <div className="max-w-3xl mx-auto">
+          <h3 className="text-2xl font-bold text-white mb-8">Frequently Asked Questions</h3>
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl overflow-hidden">
+                <button
+                  className="w-full px-6 py-4 text-left flex items-center justify-between text-white hover:bg-white/5 transition-colors"
+                  onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
+                >
+                  <span className="font-medium">{faq.question}</span>
+                  <ChevronDown 
+                    className={`w-5 h-5 transition-transform ${
+                      openFAQ === index ? 'rotate-180' : ''
+                    }`} 
+                  />
+                </button>
+                {openFAQ === index && (
+                  <div className="px-6 pb-4 text-white/90">
+                    {faq.answer}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
