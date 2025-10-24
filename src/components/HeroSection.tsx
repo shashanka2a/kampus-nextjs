@@ -1,3 +1,5 @@
+'use client';
+
 import { ShoppingBag, Car, Home, PartyPopper, Star, Users, Shield } from 'lucide-react';
 import { Button } from './ui/button';
 
