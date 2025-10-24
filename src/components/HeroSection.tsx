@@ -81,7 +81,7 @@ export function HeroSection() {
             }}
           >
             <span className="relative z-10 flex items-center gap-2">
-              <span>Get started to explore now</span>
+              <span>Explore Now</span>
             </span>
           </Button>
         </div>
