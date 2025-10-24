@@ -21,17 +21,11 @@ export function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Features
-            </a>
-            <a href="#pricing" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Pricing
-            </a>
             <a href="#faq" className="text-gray-600 hover:text-gray-900 transition-colors">
               FAQ
             </a>
             <a href="#apps" className="text-gray-600 hover:text-gray-900 transition-colors">
-              Our Apps
+              Apps
             </a>
             <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
               Contact
