@@ -42,41 +42,41 @@ export function CTASection() {
 
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         {/* Headline */}
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in-up">
           Ready to transform your campus experience?
-          <span className="inline-block ml-2">✨</span>
+          <span className="inline-block ml-2 animate-bounce">✨</span>
         </h2>
 
         {/* Subline */}
-        <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
+        <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto animate-fade-in-up animation-delay-200">
           Free .edu verified and all - Get started with our student-focused platform today
         </p>
 
         {/* Pill Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
-          <div className="flex items-center gap-2 px-5 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white">
-            <CheckCircle className="w-4 h-4" />
-            <span className="text-sm">No setup fees</span>
+        <div className="flex flex-wrap justify-center gap-4 mb-10 animate-fade-in-up animation-delay-400">
+          <div className="flex items-center gap-2 px-5 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white hover:bg-white/30 hover:scale-105 transition-all duration-300 group">
+            <CheckCircle className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+            <span className="text-sm group-hover:font-medium transition-all duration-300">No setup fees</span>
           </div>
-          <div className="flex items-center gap-2 px-5 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white">
-            <Users className="w-4 h-4" />
-            <span className="text-sm">Join 250+ students</span>
+          <div className="flex items-center gap-2 px-5 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white hover:bg-white/30 hover:scale-105 transition-all duration-300 group">
+            <Users className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+            <span className="text-sm group-hover:font-medium transition-all duration-300">Join 250+ students</span>
           </div>
-          <div className="flex items-center gap-2 px-5 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white">
-            <Star className="w-4 h-4 fill-white" />
-            <span className="text-sm">4.9★ rating</span>
+          <div className="flex items-center gap-2 px-5 py-2 bg-white/20 backdrop-blur-sm border border-white/30 rounded-full text-white hover:bg-white/30 hover:scale-105 transition-all duration-300 group">
+            <Star className="w-4 h-4 fill-white group-hover:scale-110 transition-transform duration-300" />
+            <span className="text-sm group-hover:font-medium transition-all duration-300">4.9★ rating</span>
           </div>
         </div>
 
         {/* Central CTA */}
-        <div className="flex justify-center mb-6">
-          <Button className="relative bg-white text-purple-600 px-10 py-7 rounded-2xl shadow-2xl hover:shadow-white/20 transition-all duration-200 hover:-translate-y-1 group border-2 border-transparent hover:border-purple-400">
-            <span className="flex items-center gap-3">
-              <span className="text-lg">Get Started</span>
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+        <div className="flex justify-center mb-6 animate-fade-in-up animation-delay-600">
+          <Button className="relative bg-white text-purple-600 px-10 py-7 rounded-2xl shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:-translate-y-2 hover:scale-105 group border-2 border-transparent hover:border-purple-400">
+            <span className="flex items-center gap-3 group-hover:gap-4 transition-all duration-300">
+              <span className="text-lg group-hover:tracking-wide transition-all duration-300">Get Started</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform duration-300" />
             </span>
             {/* Glow effect */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-20 blur-xl transition-opacity" />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-300" />
           </Button>
         </div>
 
@@ -87,24 +87,24 @@ export function CTASection() {
         </p>
 
         {/* FAQ Section */}
-        <div className="max-w-3xl mx-auto">
-          <h3 className="text-2xl font-bold text-white mb-8">Frequently Asked Questions</h3>
+        <div className="max-w-3xl mx-auto animate-fade-in-up animation-delay-800">
+          <h3 className="text-2xl font-bold text-white mb-8 animate-fade-in-up animation-delay-1000">Frequently Asked Questions</h3>
           <div className="space-y-4">
             {faqs.map((faq, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl overflow-hidden">
+              <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl overflow-hidden hover:bg-white/15 transition-all duration-300 hover:scale-105 group">
                 <button
-                  className="w-full px-6 py-4 text-left flex items-center justify-between text-white hover:bg-white/5 transition-colors"
+                  className="w-full px-6 py-4 text-left flex items-center justify-between text-white hover:bg-white/5 transition-all duration-300 group-hover:gap-2"
                   onClick={() => setOpenFAQ(openFAQ === index ? null : index)}
                 >
-                  <span className="font-medium">{faq.question}</span>
+                  <span className="font-medium group-hover:font-semibold transition-all duration-300">{faq.question}</span>
                   <ChevronDown 
-                    className={`w-5 h-5 transition-transform ${
+                    className={`w-5 h-5 transition-all duration-300 group-hover:scale-110 ${
                       openFAQ === index ? 'rotate-180' : ''
                     }`} 
                   />
                 </button>
                 {openFAQ === index && (
-                  <div className="px-6 pb-4 text-white/90">
+                  <div className="px-6 pb-4 text-white/90 animate-fade-in-up">
                     {faq.answer}
                   </div>
                 )}

@@ -21,20 +21,23 @@ export function Header() {
 
           {/* Navigation */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#faq" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="#faq" className="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105 relative group">
               FAQ
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
             </a>
-            <a href="#apps" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="#apps" className="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105 relative group">
               Apps
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-all duration-300 hover:scale-105 relative group">
               Contact
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-600 group-hover:w-full transition-all duration-300"></span>
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden p-2">
-            <Menu className="w-6 h-6" />
+          <button className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-all duration-300 hover:scale-110">
+            <Menu className="w-6 h-6 hover:rotate-90 transition-transform duration-300" />
           </button>
         </div>
       </div>
