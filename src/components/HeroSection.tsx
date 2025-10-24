@@ -21,7 +21,7 @@ export function HeroSection() {
 
         {/* Subline */}
         <p className="text-center text-gray-600 text-lg sm:text-xl max-w-3xl mx-auto mb-12">
-          Kampus.fun: The UF student marketplace for textbooks, furniture, rides, housing, and events — trusted by 250+ Gators.
+          The UF student marketplace for textbooks, furniture, rides, housing, and events trusted by 250+ Gators.
         </p>
 
         {/* Glassmorphism App Icons Card */}
@@ -69,9 +69,17 @@ export function HeroSection() {
 
         {/* CTA Button */}
         <div className="flex justify-center mb-16">
-          <Button className="relative bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 text-white px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1">
+          <Button 
+            className="relative bg-gradient-to-r from-green-500 via-blue-500 to-purple-600 text-white px-8 py-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-200 hover:-translate-y-1"
+            onClick={() => {
+              const featuresSection = document.getElementById('features');
+              if (featuresSection) {
+                featuresSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+          >
             <span className="relative z-10 flex items-center gap-2">
-              <span>+ Post a Listing</span>
+              <span>Get started to explore now</span>
             </span>
           </Button>
         </div>

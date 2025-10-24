@@ -1,12 +1,12 @@
-import { ShoppingCart, Navigation, Home, Zap, ArrowRight } from 'lucide-react';
+import { ShoppingBag, Car, Home, PartyPopper, ArrowRight } from 'lucide-react';
 
 const features = [
   {
     name: 'GatorEx',
     description: 'Sell textbooks in seconds',
-    icon: ShoppingCart,
-    color: 'from-orange-500 to-orange-600',
-    glowColor: 'group-hover:shadow-orange-500/20',
+    icon: ShoppingBag,
+    color: 'from-blue-500 to-blue-600',
+    glowColor: 'group-hover:shadow-blue-500/20',
     benefits: [
       'Instant listings',
       'Send payment',
@@ -16,8 +16,8 @@ const features = [
   {
     name: 'Rydify',
     description: 'Split ride costs effortlessly',
-    icon: Navigation,
-    color: 'from-pink-500 to-pink-600',
+    icon: Car,
+    color: 'from-red-500 to-pink-600',
     glowColor: 'group-hover:shadow-pink-500/20',
     benefits: [
       'Cost splitting',
@@ -40,9 +40,9 @@ const features = [
   {
     name: 'Tribzy',
     description: 'Never miss campus events',
-    icon: Zap,
-    color: 'from-violet-500 to-purple-600',
-    glowColor: 'group-hover:shadow-violet-500/20',
+    icon: PartyPopper,
+    color: 'from-purple-500 to-violet-600',
+    glowColor: 'group-hover:shadow-purple-500/20',
     benefits: [
       'Event discovery',
       'RSVP tracking',
@@ -53,7 +53,7 @@ const features = [
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
+    <section id="features" className="py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
