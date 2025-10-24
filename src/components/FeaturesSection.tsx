@@ -58,8 +58,7 @@ export function FeaturesSection() {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Everything You Need{' '}
-            <span className="inline-block">✨</span>
+            Everything You Need
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Four powerful student-focused apps, all designed to make your campus life easier
@@ -103,26 +102,6 @@ export function FeaturesSection() {
           ))}
         </div>
 
-        {/* Bottom CTA */}
-        <div className="mt-16 text-center">
-          <p className="text-gray-600 mb-6">
-            Ready to transform your campus experience?
-          </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            <button className="px-6 py-2 bg-white border border-gray-300 rounded-lg hover:border-gray-400 transition-colors">
-              GatorEx
-            </button>
-            <button className="px-6 py-2 bg-white border border-gray-300 rounded-lg hover:border-gray-400 transition-colors">
-              Rydify
-            </button>
-            <button className="px-6 py-2 bg-white border border-gray-300 rounded-lg hover:border-gray-400 transition-colors">
-              Vybr
-            </button>
-            <button className="px-6 py-2 bg-white border border-gray-300 rounded-lg hover:border-gray-400 transition-colors">
-              Tribzy
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );
